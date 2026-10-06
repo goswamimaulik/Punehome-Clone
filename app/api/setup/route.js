@@ -4,6 +4,8 @@ import { User, City } from '@/lib/models';
 import { bcrypt } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
 
+export const dynamic = 'force-dynamic';
+
 // Visit /api/setup ONCE after deploying. It creates the first admin and a few cities.
 export async function GET() {
   await db();
